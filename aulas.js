@@ -1,5 +1,5 @@
 const subjects = {
-  html: {
+  basicHtml: {
     link: 'https://coconut-snow-88e.notion.site/HTML-200027be029e80cead9cf6b47e10cf35',
     title: 'HTML',
     subtitle: 'Aprenda o básico sobre HTML',
