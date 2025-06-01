@@ -36,6 +36,8 @@ function getSubjectInfos() {
   const materialLink = document.querySelector('.button-bookwork');
   const containerTitle = document.querySelector('.container-title');
 
+  console.log('content: ', content);
+  console.log('subjects[content]: ', subjects[content]);
   materialLink.href = subjects[content].link;
 
   if (containerTitle) {
