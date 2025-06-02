@@ -25,7 +25,7 @@ const subjects = {
   }
 }
 
-const youtubeKey = 'AIzaSyC2_xwF9WrvMnmGPJSb_jz-_SmD_8pu1Qg';
+const youtubeKey = window.ENV.API_KEY ?? null;
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
