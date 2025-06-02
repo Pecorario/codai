@@ -49,39 +49,41 @@ function getSubjectInfos() {
 }
 
 async function fetchYouTubeVideoDetails(videoId) {
-  const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&id=${videoId}&key=${youtubeKey}`;
+  if (youtubeKey) {
+    const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&id=${videoId}&key=${youtubeKey}`;
 
-  try {
-    const response = await fetch(apiUrl);
-    if (!response.ok) {
-      throw new Error(`Erro na API: ${response.status} ${response.statusText}`);
+    try {
+      const response = await fetch(apiUrl);
+      if (!response.ok) {
+        throw new Error(`Erro na API: ${response.status} ${response.statusText}`);
+      }
+      const data = await response.json();
+
+      if (data.items && data.items.length > 0) {
+        const video = data.items[0];
+        const snippet = video.snippet;
+        const contentDetails = video.contentDetails;
+
+        const title = snippet.title;
+        const thumbnailUrl = snippet.thumbnails.high.url;
+
+        const durationISO = contentDetails.duration;
+        const durationFormatted = formatYouTubeDuration(durationISO);
+
+        const details = {
+          title,
+          thumb: thumbnailUrl,
+          duration: durationFormatted,
+        };
+
+        return details;
+
+      } else {
+        console.log(`Vídeo com ID "${videoId}" não encontrado ou informações indisponíveis.`)
+      }
+    } catch (error) {
+      console.error('Falha ao buscar detalhes do vídeo:', error);
     }
-    const data = await response.json();
-
-    if (data.items && data.items.length > 0) {
-      const video = data.items[0];
-      const snippet = video.snippet;
-      const contentDetails = video.contentDetails;
-
-      const title = snippet.title;
-      const thumbnailUrl = snippet.thumbnails.high.url;
-
-      const durationISO = contentDetails.duration;
-      const durationFormatted = formatYouTubeDuration(durationISO);
-
-      const details = {
-        title,
-        thumb: thumbnailUrl,
-        duration: durationFormatted,
-      };
-
-      return details;
-
-    } else {
-      console.log(`Vídeo com ID "${videoId}" não encontrado ou informações indisponíveis.`)
-    }
-  } catch (error) {
-    console.error('Falha ao buscar detalhes do vídeo:', error);
   }
 }
 
