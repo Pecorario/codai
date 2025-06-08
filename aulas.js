@@ -15,13 +15,13 @@ const subjects = {
     link: 'https://coconut-snow-88e.notion.site/JavaScript-200027be029e805b8146f14b783a5622',
     title: 'JavaScript',
     subtitle: 'Aprenda o básico sobre JavaScript',
-    classes: ['FNKkgyla-bk', '3LTGEFMDgLY', 'cc8mQ5H37Hs', 'UI9lPk-YTv0']
+    classes: ['VaqSO1QyGDc', 'tNFsZB_ysp4', 'b1o2BvuFQLk', 'pUqbOu6d2e4', 'YMeBFGfM3d8', '8hmkOHmvSWA', 'SnO2r973Pb0', 'ww4w4GtxplA', 'KhNv4bYyLM4', 'Hrwy50ObWUM', 'cx6jqYYOX3Y']
   },
   jsDinamico: {
     link: 'https://coconut-snow-88e.notion.site/JavaScript-Din-mico-200027be029e80fc9d7cdd28e312fed5',
     title: 'JavaScript Dinâmico',
     subtitle: 'Aprenda o básico sobre JavaScript Dinâmico',
-    classes: ['FNKkgyla-bk', '3LTGEFMDgLY', 'cc8mQ5H37Hs', 'UI9lPk-YTv0']
+    classes: ['8lLH217_tI0', 'fEGnMBgRPWA', 'eVC9hYqgY0g', 'BFA-XsMZRxA', 'mOm2dADD5ms']
   }
 }
 
