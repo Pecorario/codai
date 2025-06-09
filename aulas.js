@@ -3,13 +3,13 @@ const subjects = {
     link: 'https://coconut-snow-88e.notion.site/HTML-200027be029e80cead9cf6b47e10cf35',
     title: 'HTML',
     subtitle: 'Aprenda o básico sobre HTML',
-    classes: ['FNKkgyla-bk', '3LTGEFMDgLY', 'cc8mQ5H37Hs', 'UI9lPk-YTv0']
+    classes: ['sW-oHVHUzq0', 'lWDUBJ_iAWI', 'Ek9Uwsm4kpE', '1oPkdZxVdwk', 'mb3sOON6W2o']
   },
   css: {
     link: 'https://coconut-snow-88e.notion.site/CSS-200027be029e806b9764c44af790a88e?pvs=25',
     title: 'CSS',
     subtitle: 'Aprenda o básico sobre CSS',
-    classes: ['FNKkgyla-bk', '3LTGEFMDgLY', 'cc8mQ5H37Hs', 'UI9lPk-YTv0']
+    classes: ['Sc6yKm3AFW0', 'VYLX2NtXPK4', 'dUm9BXLh98E', 'RHrbWo_Bjc0', 'MrXDpgWVOFk']
   },
   js: {
     link: 'https://coconut-snow-88e.notion.site/JavaScript-200027be029e805b8146f14b783a5622',
